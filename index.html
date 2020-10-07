@@ -1,0 +1,149 @@
+<style>
+.row.banner-title{ padding:0px 20px; }
+
+.bg-im-saludable{
+      background-color:#295BA7;background-image:url({{media url="wysiwyg/pattern-food.png"}});text-align:center;border-radius: 5px;background-blend-mode: soft-light;background-position: 50%; background-size: cover;
+}
+
+.bg-im-saludable h2{color:#fff;margin: 2.2rem auto; font-size: 28px; font-weight: 500;}
+
+h3.subtitulo-slider{text-align: center; margin-bottom: 18px; font-size: 20px;font-weight: 500;}
+
+.collapsible{border:0;box-shadow:0 0 0 transparent;text-align: center;}
+
+.collapsible .collapsible-header{background-color: transparent;border: 0;text-align: center; display: block;font-weight: 500;}
+
+.collapsible .collapsible-header i{color: #295ba7;}
+
+.collapsible .collapsible-body{padding:0;border: 0;}
+
+.owl-carousel-desktop .block-slider-category img{
+    filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+width: calc(189px / 2);
+}   
+
+.owl-carousel-desktop .block-slider-category img:hover{
+    filter: grayscale(0%);
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+-ms-filter: grayscale(0%);
+-o-filter: grayscale(0%);
+}   
+
+
+body.mobile .owl-carousel-desktop .block-slider-category img{
+    filter: grayscale(0%);
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+-ms-filter: grayscale(0%);
+-o-filter: grayscale(0%);
+width: 100%;
+}   
+
+body.tablet .owl-carousel-desktop .block-slider-category img{
+    filter: grayscale(0%);
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+-ms-filter: grayscale(0%);
+-o-filter: grayscale(0%);
+}
+</style>
+
+<div class="row">
+    <div class="col s12 bg-im-saludable">
+                   <h2></h2>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col s12 bg-im-saludable">
+                   <h2></h2>
+    </div>
+</div>  
+
+<h3>Encontra tu preferencia</h3>
+
+
+
+<div class="col s12 m12 l9">
+<div>
+    <div class="owl-carousel owl-carousel-desktop" style="margin-bottom: 20px;">
+
+    <div>
+	    <div class="block-slider-category">
+	    	<img src="" alt="" >
+	    </div>
+    </div>
+    <div>
+	    <div class="block-slider-category">
+	    	<img src="" alt="" >
+	    </div>
+    </div>
+    <div>
+	    <div class="block-slider-category">
+	    	<img src="" alt="" >
+	    </div>
+    </div>
+    <div>
+	    <div class="block-slider-category">
+	    	<img src="" alt="" >
+	    </div>
+    </div>
+    <div>
+	    <div class="block-slider-category">
+	    	<img src="" alt="" >
+	    </div>
+    </div>
+    <div>
+	    <div class="block-slider-category">
+	    	<img src="" alt="" >
+	    </div>
+    </div>
+
+    </div>
+</div>
+</div>
+
+
+<ul class="collapsible">
+    <li>
+      <div class="collapsible-header">Legales</div>
+      <div class="collapsible-body"><span>Brindamos información nutricional y sobre dietas especiales únicamente con fines educativos. Los cambios en los ingredientes del producto pueden no reflejarse inmediatamente en supermercado.carrefour.com.ar. Aconsejamos siempre revisar la información nutricional del producto para conocer los ingredientes más actualizados. La información proporcionada en este sitio web no reemplaza la consulta médica para tomar decisiones relacionadas con la salud.</span></div>
+    </li>
+</ul>
+
+<script>
+
+
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+});
+
+(function ($) {
+
+$('.owl-carousel-desktop').owlCarousel({
+    stagePadding: 10,
+    loop: true,
+    margin:10,
+    nav: true,
+    responsive:{
+        0:{
+            items:4
+        },
+        600:{
+            items:6
+        },
+        1000:{
+            items:10
+        }
+    }
+});
+
+}(jQuery));
+
+</script>
